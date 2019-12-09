@@ -15,6 +15,7 @@ var express = require("express"),
 var indexRoutes = require("./routs/index"),
   campgroundRoutes = require("./routs/campgrounds"),
   commentRoutes = require("./routs/comments");
+  mapRoutes = require("./routs/map")
 
 var databaseURL = process.env.DATABASEURL || "mongodb://localhost/yelp_camp";
 // mongoose.connect(databaseURL);
@@ -69,6 +70,8 @@ app.get("/profile", function(req, res) {
 app.use(indexRoutes);
 app.use(campgroundRoutes);
 app.use(commentRoutes);
+app.use(mapRoutes);
+
 app.locals.moment = require("moment");
 
 var port = process.env.PORT || 3000;

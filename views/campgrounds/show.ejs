@@ -4,7 +4,7 @@
         <div class="col-md-3">
             <p class="lead campground-author">Submited By: <a href="/profile"><%= campground.author.username %></a></p>
             <div class="dropdown">
-                <a id="my-campground" href="#" class="btn btn-success dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Campgrounds <span class="caret"></span></a>
+                <a id="my-campground" href="#" class="btn btn-success dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More info about the cats <span class="caret"></span></a>
                 <ul class="dropdown-menu dropdown-menu-list">
                 <li><a href="#">list item 1</a></li>
                 <li role="separator" class="divider"></li>
@@ -19,7 +19,7 @@
                 <img class="responsive" src=" <%= campground.image %> ">
                 <div class="caption-full">
                     <div>
-                        <h5 class="pull-right">$<%= campground.price %>/night</h5>
+                        <h5 class="pull-right">$<%= campground.price %> for adoption</h5>
                         <h4><a><%= campground.name %></a></ha>
                     </div>
                     <p class="description">
@@ -30,8 +30,8 @@
                             <%= moment(campground.createdAt).fromNow() %>
                         </span>
                     </p>
-                    <p class="starability-result" data-rating="3">
-                        Rated: 3 stars
+                    <!-- <p class="starability-result" data-rating="3">
+                        Rated: 3 stars -->
                     </p>
                     <% if(currentUser && campground.author.id.equals(currentUser._id)){ %>
                         <a href="/campground/<%= campground._id %>/edit">
