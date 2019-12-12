@@ -2,81 +2,96 @@
     width: 100%;
 }
 
-.body{
+.body {
     background-color: purple;
 }
-.delete-form{
+
+.delete-form {
     display: inline;
 }
+
 .pull-right {
     margin: 0;
     font-weight: bold;
 }
-#foot{
+
+#foot {
     position: absolute;
     bottom: 0;
     font-size: 13px;
     text-align-last: center;
     border-color: transparent;
-    margin-bottom:3px;
+    margin-bottom: 3px;
     margin-top: 10px;
     padding-top: 5px;
     width: 100%;
 }
-.jumbotron{
+
+.jumbotron {
     text-align: center;
     background-position: center;
     background-image: url(https://atlantahumane.org/wp-content/uploads/2012/08/adopt-a-cat-1200x630.png);
     background-attachment: scroll;
     color: white;
 }
-#jumbotron-back{
+
+#jumbotron-back {
     width: 100%;
     height: 100%;
-    
 }
-.navbar{
+
+.navbar {
     margin-bottom: 0;
 }
-.description{
+
+.description {
     font-size: .9em;
 }
-#delete-btn{
+
+#delete-btn {
     background: none;
     border: none;
     color: #337ab7;
     display: inline;
 }
+
 i {
-   display: inline; 
+    display: inline;
 }
-#ratting-box{
+
+#ratting-box {
     width: 100%;
     font-size: .9em;
 }
-legend{
+
+legend {
     margin-bottom: 0;
     font-size: 15px;
-   font-weight: bold;
+    font-weight: bold;
 }
-#rating-b{
+
+#rating-b {
     display: inline;
 }
-#flash-msg{
+
+#flash-msg {
     text-align: center;
 }
-#my-campground{
+
+#my-campground {
     width: 100%;
 }
-.dropdown-menu-list{
+
+.dropdown-menu-list {
     width: 100%;
 }
-.campground-author{
-    width:100%;
-    text-align:center;
+
+.campground-author {
+    width: 100%;
+    text-align: center;
     margin: 0;
-    padding-top:20px;
-    padding-bottom:10px;
-    background-color:#e7e7e7;
-    margin-bottom:10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: #e7e7e7;
+    margin-bottom: 10px;
 }
